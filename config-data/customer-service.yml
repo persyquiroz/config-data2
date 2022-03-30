@@ -1,0 +1,44 @@
+server:
+  port: 8002
+  error:
+    include-stacktrace: never
+
+spring:
+  sql:
+    init:
+      mode: always
+      continue-on-error: true
+  application:
+    name: ws-customer
+  main:
+    banner-mode: off
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: America/Lima
+
+  servlet:
+    multipart:
+      max-file-size: 128MB
+      max-request-size: 128MB
+      enabled: true
+  jmx:
+    enabled: false
+
+#hikariCP
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    poolName: SpringBootHikariCP
+    hikari:
+      maximum-pool-size: 5
+      connection-timeout: 60000
+      max-lifetime: 20000
+    url: jdbc:postgresql://localhost:5434/service_customer
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password: 123456
+  jpa:
+    database: POSTGRESQL
+    database-platform: org.hibernate.dialect.PostgreSQL82Dialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
