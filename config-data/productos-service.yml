@@ -27,7 +27,7 @@ spring:
 #hikariCP
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
-    poolName: SpringBootHikariCP
+    pool-name: SpringBootHikariCP
     hikari:
       maximum-pool-size: 5
       connection-timeout: 60000
