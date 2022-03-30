@@ -43,6 +43,11 @@ spring:
       ddl-auto: update
     show-sql: true
 
+eureka:
+  client:
+    service-url:
+      default-zone: http://localhost:8099/eureka/
+
 # CURSO
 # https://www.youtube.com/watch?v=p5uMy2DLE7A&list=PLxy6jHplP3Hi_W8iuYSbAeeMfaTZt49PW&index=7
 # https://github.com/digitallab-academy/ms-course-youtube/tree/master/product-service
