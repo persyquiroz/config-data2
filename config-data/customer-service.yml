@@ -9,7 +9,7 @@ spring:
       mode: always
       continue-on-error: true
   application:
-    name: ws-customer
+    name: customer-service
   main:
     banner-mode: off
   jackson:
