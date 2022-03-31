@@ -59,6 +59,6 @@ management:
   endpoints:
     web:
       exposure:
-        include: "*"
-        
+        include: hystrix.stream
+
 # https://www.youtube.com/watch?v=P6vrSi6L3Gs&list=PLxy6jHplP3Hi_W8iuYSbAeeMfaTZt49PW&index=11
