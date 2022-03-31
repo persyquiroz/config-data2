@@ -59,12 +59,15 @@ Feign:
     enabled: true
 hystrix:
   dashboard:
-    proxy-stream-allow-list: '*'
+    proxy-stream-allow-list: "*"
+
 management:
   endpoints:
+    hystrix:
+      stream:
+        enabled: true
     web:
       exposure:
-        include: '*'
-      base-path: /
+        include: "*"
 
 # https://www.youtube.com/watch?v=P6vrSi6L3Gs&list=PLxy6jHplP3Hi_W8iuYSbAeeMfaTZt49PW&index=11
