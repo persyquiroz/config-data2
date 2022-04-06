@@ -27,6 +27,6 @@ spring:
             - Path=/invoices/**
 
         - id: idau-service
-          uri: http://localhost:8000/
+          uri: http://localhost:8000
           predicates:
             - Path=/idau/**
