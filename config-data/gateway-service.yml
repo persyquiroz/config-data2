@@ -29,4 +29,6 @@ spring:
         - id: idau-service
           uri: http://localhost:8000
           predicates:
-            - Path=/**
+            - Path=/idau/**
+          filters:
+            - RewritePath=/idau/(?<segment>.*), /$\{segment}
