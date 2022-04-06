@@ -48,6 +48,18 @@ eureka:
     serviceUrl:
       defaultZone: http://localhost:8099/eureka/
 
+hystrix:
+  dashboard:
+    proxy-stream-allow-list: "*"
+management:
+  endpoints:
+    hystrix:
+      stream:
+        enabled: true
+    web:
+      exposure:
+        include: "*"
+
 # CURSO
 # https://www.youtube.com/watch?v=p5uMy2DLE7A&list=PLxy6jHplP3Hi_W8iuYSbAeeMfaTZt49PW&index=7
 # https://github.com/digitallab-academy/ms-course-youtube/tree/master/product-service
